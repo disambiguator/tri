@@ -14,6 +14,7 @@ $('body').click(function (e) {
             .attr("fill", colors[Math.floor(Math.random() * colors.length)])
             .attr("cx", e.pageX)
             .attr("cy", e.pageY)
-            .attr("r", 5 * i);
+            .attr("r", 0)
+	    .transition().attr("r", 5*i);
     }
 });
