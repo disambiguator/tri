@@ -1,6 +1,6 @@
 const colors = ['#1abc9c', '#2ecc71', '#3498db', '#9b59b6', '#34495e']
 
-const max_size = 200
+const max_size = 100
 
 var targets = []
 
