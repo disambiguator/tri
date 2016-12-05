@@ -23,10 +23,8 @@ function draw() {
 }
 
 function drawCircles(coords) {
-    for (var i = coords.numCircles; i > 0; i--) {
-        stroke(randomColor())
-        ellipse(coords.x, coords.y, scale*i)
-    }
+    stroke(randomColor())
+    ellipse(coords.x, coords.y, scale*coords.numCircles)
     
     coords.numCircles++
 }
