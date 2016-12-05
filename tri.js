@@ -7,7 +7,8 @@ var targets = []
 
 function setup() {
     createCanvas(windowWidth, windowHeight)
-    noStroke()
+    noFill()
+    strokeWeight(3)
     frameRate(15)
 }
 
@@ -23,7 +24,7 @@ function draw() {
 
 function drawCircles(coords) {
     for (var i = coords.numCircles; i > 0; i--) {
-        fill(randomColor())
+        stroke(randomColor())
         ellipse(coords.x, coords.y, scale*i)
     }
     
