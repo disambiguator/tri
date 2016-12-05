@@ -1,6 +1,7 @@
 const colors = ['#1abc9c', '#2ecc71', '#3498db', '#9b59b6', '#34495e']
 
 const max_size = 100
+const scale = 5
 
 var targets = []
 
@@ -23,7 +24,7 @@ function draw() {
 function drawCircles(coords) {
     for (var i = coords.numCircles; i > 0; i--) {
         fill(randomColor())
-        ellipse(coords.x, coords.y, 5*i)
+        ellipse(coords.x, coords.y, scale*i)
     }
     
     coords.numCircles++
